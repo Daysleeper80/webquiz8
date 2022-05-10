@@ -102,6 +102,27 @@ BEGIN
 END
 //
 
+    -- , username            VARCHAR(150) NOT NULL UNIQUE COMMENT 'Username for login'
+    -- , `password`          BINARY(32) NOT NULL COMMENT  'Hashed password SHA256 (TODO: add salt)'
+    -- , first_name          VARCHAR(50) NOT NULL COMMENT 'First (personal) name'
+    -- , middle_names        VARCHAR(250) NOT NULL COMMENT 'Middle names'
+    -- , last_name           VARCHAR(250) NOT NULL COMMENT 'Last name (surname)'
+    -- , email_addr          VARCHAR(255) NOT NULL UNIQUE DEFAULT 'Lisboa'
+    -- , birth_date          DATE NOT NULL
+    -- , account_datetime    DATETIME NOT NULL DEFAULT (NOW()) COMMENT 'Date/time of creation'
+
+DROP PROCEDURE IF EXISTS CreateUser
+//
+CREATE PROCEDURE CreateUser (
+    IN username VARCHAR(150),
+    IN `password` VARCHAR(100)
+    --- ACABAR LISTA DE PARÂMETROS
+)
+BEGIN
+    --- ACABAR DEF. DO SP
+END
+//
+
 INSERT INTO `User`
     (username, `password`, first_name, middle_names, last_name, email_addr, birth_date)
 VALUES 
