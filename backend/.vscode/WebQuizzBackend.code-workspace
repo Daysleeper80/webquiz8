@@ -1,0 +1,11 @@
+{
+	"folders": [
+        {
+            "path": ".."
+        }
+    ],
+    "settings": {
+        "python.defaultInterpreterPath": "../.venv/bin/python",
+        // "python.linting.pylintArgs": ["--extension-pkg-whitelist=mysql"]
+    }
+}
